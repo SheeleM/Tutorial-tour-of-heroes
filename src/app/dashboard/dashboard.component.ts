@@ -15,7 +15,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
     this.getHeroes();
   }
-//Esto getHeroes()devuelve la lista dividida de héroes en las posiciones 1 y 5, devolviendo solo los héroes dos, tres, cuatro y cinco.
+
   getHeroes(): void {
     this.heroService.getHeroes()
       .subscribe(heroes => this.heroes = heroes.slice(1, 5));
